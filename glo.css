@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #fff6fa;
+    color: #333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #ffe2ef;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff7ca8;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ff4d8d;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover{
+    color: #ff8dbb;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+    gap: 40px;
+}
+
+.hero-text{
+    max-width: 500px;
+}
+
+h1{
+    font-size: 3rem;
+    color: #ff4d8d;
+}
+
+#hero p{
+    margin: 15px 0 30px;
+    line-height: 1.5;
+}
+
+.cta{
+    padding: 12px 25px;
+    background: #ff4d8d;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta:hover{
+    background: #ff8dbb;
+}
+
+.hero-img{
+    width: 380px;
+    border-radius: 20px;
+}
+
+#features{
+    padding: 60px 40px;
+    text-align: center;
+}
+
+#features h2{
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #ff4d8d;
+}
+
+.features-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card{
+    background: #ffe2ef;
+    padding: 25px;
+    border-radius: 20px;
+    width: 260px;
+}
+
+.feature-card:hover{
+    transform: translateY(-8px);
+}
+
+.feature-card img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #ffd6e6;
+    padding: 10px;
+}
+
+footer{
+    background: #ffcee0;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.socials a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ff4d8d;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
